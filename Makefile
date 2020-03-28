@@ -2,8 +2,8 @@ all : slides
 
 .PHONY: slides
 slides:
-  Rscript -e "rmarkdown::render('slides.Rmd',  encoding = 'UTF-8', knit_root_dir = '~');"
-  RScript -e "pagedown::chrome_print('slides.html')"
+	Rscript -e "rmarkdown::render('slides.Rmd',  encoding = 'UTF-8', knit_root_dir = '~');"
+	Rscript -e "pagedown::chrome_print('slides.html')"
 
 .PHONY : clean
 clean :
